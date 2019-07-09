@@ -3,15 +3,8 @@ const express = require('express');
 
 const app = express();
 
-/*
-Video at: http://l.mat.fyi/rendering_06_light-paths-overview.mp4
-*/
-
 app.use( '/', (req, res, next) => {
 
-  let body;
-
-  // const url = "http://l.mat.fyi/rendering_06_light-paths-overview.mp4";
   const url = "http://10.1.10.17:8000/stream/ignite.mp4";
   let start = 0;
 
