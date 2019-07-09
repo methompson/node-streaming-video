@@ -1,0 +1,12 @@
+version: '3'
+services:
+    node:
+        build: .
+        ports:
+            - '3000:3000'
+        volumes:
+            - ./app:/srv/app
+        container_name: node
+        # command: node /srv/app/app-basic.js
+        command: npm start --prefix /srv/app
+
